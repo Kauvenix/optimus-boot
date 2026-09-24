@@ -1,0 +1,11 @@
+[Unit]
+Description=Optimus Boot
+DefaultDependencies=no
+
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/optimus-boot
+
+[Install]
+WantedBy=sysinit.target
