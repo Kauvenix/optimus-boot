@@ -1,0 +1,13 @@
+[Unit]
+Description=Optimus Boot Selector
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/optimus-boot-select
+StandardInput=tty
+StandardOutput=tty
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+TTYVTDisallocate=yes

@@ -1,0 +1,12 @@
+[Unit]
+Description=Optimus Boot
+DefaultDependencies=no
+After=optimus-boot-select_profile.service
+Requires=optimus-boot-select_profile.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/optimus-boot
+
+[Install]
+WantedBy=sysinit.target
