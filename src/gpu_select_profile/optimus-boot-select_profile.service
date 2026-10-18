@@ -4,7 +4,7 @@ DefaultDependencies=no
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/optimus-boot-select
+ExecStart=/usr/bin/optimus_boot_select_profile
 StandardInput=tty
 StandardOutput=tty
 TTYPath=/dev/tty1
